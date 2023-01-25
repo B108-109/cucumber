@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="31.777" tests="2" skipped="0" failures="1" errors="0">
-<testcase classname="first feature file" name="TC_01_iphone_search" time="17.949">
+<testsuite name="Cucumber" time="12.099" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="hooks_test" name="TC_01_test" time="11.899">
 <failure type="java.lang.AssertionError">
 <![CDATA[java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
 	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.GoogleStepDefinitions.verify_page_title_contains_i_phone(GoogleStepDefinitions.java:33)
-	at ✽.verify page title contains iPhone(file:///Users/techproed/IdeaProjects/my-cucumber-project/./src/test/resources/features/first_feature_file.feature:10)
+	at stepdefinitions.LoginStepDefinitions.verify_the_next_page_url_contains_login_keyword(LoginStepDefinitions.java:47)
+	at ✽.verify the next page url contains login keyword(file:///Users/techproed/IdeaProjects/my-cucumber-project/./src/test/resources/features/day26_failed_test_cases.feature:9)
 ]]>
 </failure>
 <system-out><![CDATA[
-Given user is on the google home page.......................................passed
-When user search for iPhone.................................................passed
-Then verify page title contains iPhone......................................failed
-Then close the application..................................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="first feature file" name="TC_02_teapot_search" time="13.6">
-<system-out><![CDATA[
-Given user is on the google home page.......................................passed
-When user search for TeaPot.................................................passed
-Then verify page title contains TeaPot......................................passed
-Then close the application..................................................passed
+Given user is on "https://www.bluerentalcars.com/login" page................passed
+And user enters customer_email and customer_password........................passed
+Then verify the next page url contains login keyword........................failed
 ]]></system-out>
 </testcase>
 </testsuite>

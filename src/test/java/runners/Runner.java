@@ -14,9 +14,9 @@ import org.junit.runner.RunWith;
         },
         monochrome=true,
         features = "./src/test/resources/features",
-        glue = "stepdefinitions",
+        glue = {"stepdefinitions", "hooks"},
         dryRun = false,
-        tags = "@google_search"
+        tags = "@failed_tests"
 
 )
 public class Runner {

@@ -31,10 +31,7 @@
       <change afterPath="$PROJECT_DIR$/../SeleniumNewProject/src/test/java/tests/Day01_BasicNavigations.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SeleniumNewProject/src/test/java/tests/Day02_TitleVerification.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../SeleniumNewProject/src/test/java/tests/Day02_URLVerification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ExcelStepDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/ExcelUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/day27_excel_automation.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/mysmoketestdata.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/FailedScenarioRunner.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mycucumberproject/src/test/java/pages/GooglePage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mycucumberproject/src/test/java/stepdefinitions/GoogleStepDefs.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../mycucumberproject/src/test/java/utilities/ConfigReader.java" afterDir="false" />
@@ -75,15 +72,17 @@
       <change beforePath="$PROJECT_DIR$/../jdbc_review/src/test/java/tests/ReadData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc_review/src/test/java/tests/ReadData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jdbc_review/src/test/java/tests/UpdateData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc_review/src/test/java/tests/UpdateData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ExcelStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ExcelStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day26_failed_test_cases.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day26_failed_test_cases.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/day27_excel_automation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/day27_excel_automation.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/default-cucumber-reports.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/default-cucumber-reports.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/json-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/json-reports/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hooks/Hooks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day26_failed_test_cases.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/day26_failed_test_cases.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/day27_excel_automation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/day27_excel_automation.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepdefinitions/ExcelStepDefinitions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepdefinitions/ExcelStepDefinitions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/xml-report/cucumber.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../my-testNG-project/.idea/compiler.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../my-testNG-project/.idea/dbnavigator.xml" beforeDir="false" />
@@ -204,7 +203,7 @@
       <recent name="$PROJECT_DIR$/src/test/resources/testdata" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
+  <component name="RunManager" selected="JUnit.FailedScenarioRunner">
     <configuration name="Feature: first_feature_file" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/first_feature_file.feature" />
@@ -262,6 +261,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FailedScenarioRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-cucumber-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.FailedScenarioRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="my-cucumber-project" />
       <extension name="coverage">
@@ -279,6 +293,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FailedScenarioRunner" />
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Scenario: search_scenario" />
         <item itemvalue="Cucumber Java.Feature: first_feature_file" />
@@ -310,30 +325,31 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2505" height="107" key="GridCell.Tab.0.bottom" timestamp="1674919239499">
-      <screen x="0" y="25" width="2560" height="1415" />
-    </state>
-    <state width="2505" height="107" key="GridCell.Tab.0.bottom/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1674919239499" />
-    <state width="2321" height="723" key="GridCell.Tab.0.bottom/78.25.2482.1415/2560.25.1920.1055@78.25.2482.1415" timestamp="1674756118130" />
-    <state width="2505" height="107" key="GridCell.Tab.0.center" timestamp="1674919239499">
-      <screen x="0" y="25" width="2560" height="1415" />
-    </state>
-    <state width="2505" height="107" key="GridCell.Tab.0.center/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1674919239499" />
-    <state width="2321" height="723" key="GridCell.Tab.0.center/78.25.2482.1415/2560.25.1920.1055@78.25.2482.1415" timestamp="1674756118129" />
-    <state width="2505" height="107" key="GridCell.Tab.0.left" timestamp="1674919239498">
-      <screen x="0" y="25" width="2560" height="1415" />
-    </state>
-    <state width="2505" height="107" key="GridCell.Tab.0.left/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1674919239498" />
-    <state width="2321" height="723" key="GridCell.Tab.0.left/78.25.2482.1415/2560.25.1920.1055@78.25.2482.1415" timestamp="1674756118128" />
-    <state width="2505" height="107" key="GridCell.Tab.0.right" timestamp="1674919239499">
-      <screen x="0" y="25" width="2560" height="1415" />
-    </state>
-    <state width="2505" height="107" key="GridCell.Tab.0.right/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1674919239499" />
-    <state width="2321" height="723" key="GridCell.Tab.0.right/78.25.2482.1415/2560.25.1920.1055@78.25.2482.1415" timestamp="1674756118129" />
-    <state x="757" y="288" key="SettingsEditor" timestamp="1674399899560">
+    <state width="2321" height="300" key="GridCell.Tab.0.bottom" timestamp="1674927426356">
       <screen x="78" y="25" width="2482" height="1415" />
     </state>
-    <state x="757" y="288" key="SettingsEditor/78.25.2482.1415/2560.25.1920.1055@78.25.2482.1415" timestamp="1674399899560" />
+    <state width="2505" height="303" key="GridCell.Tab.0.bottom/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1674925459936" />
+    <state width="2321" height="300" key="GridCell.Tab.0.bottom/78.25.2482.1415/2560.25.1920.1055@78.25.2482.1415" timestamp="1674927426356" />
+    <state width="2321" height="300" key="GridCell.Tab.0.center" timestamp="1674927426355">
+      <screen x="78" y="25" width="2482" height="1415" />
+    </state>
+    <state width="2505" height="303" key="GridCell.Tab.0.center/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1674925459936" />
+    <state width="2321" height="300" key="GridCell.Tab.0.center/78.25.2482.1415/2560.25.1920.1055@78.25.2482.1415" timestamp="1674927426355" />
+    <state width="2321" height="300" key="GridCell.Tab.0.left" timestamp="1674927426355">
+      <screen x="78" y="25" width="2482" height="1415" />
+    </state>
+    <state width="2505" height="303" key="GridCell.Tab.0.left/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1674925459936" />
+    <state width="2321" height="300" key="GridCell.Tab.0.left/78.25.2482.1415/2560.25.1920.1055@78.25.2482.1415" timestamp="1674927426355" />
+    <state width="2321" height="300" key="GridCell.Tab.0.right" timestamp="1674927426356">
+      <screen x="78" y="25" width="2482" height="1415" />
+    </state>
+    <state width="2505" height="303" key="GridCell.Tab.0.right/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1674925459936" />
+    <state width="2321" height="300" key="GridCell.Tab.0.right/78.25.2482.1415/2560.25.1920.1055@78.25.2482.1415" timestamp="1674927426356" />
+    <state x="757" y="288" key="SettingsEditor" timestamp="1674923377619">
+      <screen x="78" y="25" width="2482" height="1415" />
+    </state>
+    <state x="700" y="288" key="SettingsEditor/0.25.2560.1415/2560.25.1920.1055@0.25.2560.1415" timestamp="1674922599112" />
+    <state x="757" y="288" key="SettingsEditor/78.25.2482.1415/2560.25.1920.1055@78.25.2482.1415" timestamp="1674923377619" />
     <state x="964" y="342" width="838" height="1032" key="search.everywhere.popup" timestamp="1674608773751">
       <screen x="78" y="25" width="2482" height="1415" />
     </state>

@@ -1,24 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="3.431" tests="3" skipped="0" failures="0" errors="0">
-<testcase classname="db_customer_testing" name="TC01_read_customer_login_info" time="1.24">
+<testsuite name="Cucumber" time="20.748" tests="2" skipped="0" failures="2" errors="0">
+<testcase classname="hooks_test" name="TC_01_test" time="11.566">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.LoginStepDefinitions.verify_the_next_page_url_contains_login_keyword(LoginStepDefinitions.java:47)
+	at ✽.verify the next page url contains login keyword(file:///Users/techproed/IdeaProjects/my-cucumber-project/./src/test/resources/features/day26_failed_test_cases.feature:8)
+]]>
+</failure>
 <system-out><![CDATA[
-Given user connects to the application database.............................passed
-And user gets the column "*" from table "jhi_user"..........................passed
-Then user reads all the column "login" data.................................passed
+Given user is on "https://www.bluerentalcars.com/login" page................passed
+And user enters customer_email and customer_password........................passed
+Then verify the next page url contains login keyword........................failed
 ]]></system-out>
 </testcase>
-<testcase classname="db_customer_testing" name="TC02_read_customer_firstname_info" time="0.993">
+<testcase classname="hooks_test" name="TC_01_test" time="8.947">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.LoginStepDefinitions.verify_the_next_page_url_contains_login_keyword(LoginStepDefinitions.java:47)
+	at ✽.verify the next page url contains login keyword(file:///Users/techproed/IdeaProjects/my-cucumber-project/./src/test/resources/features/day26_failed_test_cases.feature:15)
+]]>
+</failure>
 <system-out><![CDATA[
-Given user connects to the application database.............................passed
-And user gets the column "*" from table "jhi_user"..........................passed
-Then user reads all the column "first_name" data............................passed
-]]></system-out>
-</testcase>
-<testcase classname="db_customer_testing" name="TC03_read_customer_firstname_info" time="0.919">
-<system-out><![CDATA[
-Given user connects to the application database.............................passed
-And user gets the column "*" from table "tp_customer".......................passed
-Then user reads all the column "email" data.................................passed
+Given user is on "https://www.bluerentalcars.com/login" page................passed
+And user enters customer_email and customer_password........................passed
+Then verify the next page url contains login keyword........................failed
 ]]></system-out>
 </testcase>
 </testsuite>
